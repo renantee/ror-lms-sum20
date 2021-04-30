@@ -14,3 +14,15 @@
 #  $ ln -s config/Guardfile .
 #
 # and, you'll have to watch "config/Guardfile" instead of "Guardfile"
+
+guard :rails_best_practices do
+  watch(%r{^app/(.+).rb$})
+  watch(/.+\.rb$/)
+end
+
+guard :rubocop, all_on_start: true,
+                cli:          ["--auto-correct", "--display-style-guide", "--display-cop-names"] do
+  watch(/.+\.rb$/)
+  watch(/.+\.rake$/)
+  watch(/^\.rubocop\.yml$/)
+end
