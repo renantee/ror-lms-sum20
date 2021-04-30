@@ -36,8 +36,9 @@ group :development, :test do
   gem 'rubocop-rails', require: false
   gem 'rubocop-performance', require: false
 
-  gem 'rails_best_practices'
-  gem 'guard'
+  gem 'rails_best_practices', require: false
+  gem 'guard', require: false
+  gem 'guard-rubocop', require: false
 end
 
 group :development do
