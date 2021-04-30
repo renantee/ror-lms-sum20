@@ -39,6 +39,7 @@ group :development, :test do
   gem 'rails_best_practices', require: false
   gem 'guard', require: false
   gem 'guard-rubocop', require: false
+  gem 'guard-rails_best_practices', git: "https://github.com/logankoester/guard-rails_best_practices.git"
 end
 
 group :development do
