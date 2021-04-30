@@ -37,6 +37,7 @@ group :development, :test do
   gem 'rubocop-performance', require: false
 
   gem 'rails_best_practices'
+  gem 'guard'
 end
 
 group :development do
