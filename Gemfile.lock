@@ -1,4 +1,12 @@
 GIT
+  remote: https://github.com/faker-ruby/faker.git
+  revision: c6f5ce104389161c8cf89de16533e9dc3a79b54e
+  branch: master
+  specs:
+    faker (2.18.0)
+      i18n (>= 1.6, < 2)
+
+GIT
   remote: https://github.com/logankoester/guard-rails_best_practices.git
   revision: 1f4b2edfb39505badcdbec8d9a7158b5ae117e23
   specs:
@@ -300,6 +308,7 @@ DEPENDENCIES
   byebug
   capybara (>= 3.26)
   factory_bot_rails
+  faker!
   guard
   guard-rails_best_practices!
   guard-rubocop
