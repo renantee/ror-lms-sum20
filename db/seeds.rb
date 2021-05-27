@@ -17,4 +17,3 @@ roles = ["teacher", "ta", "student"]
     )
   end
 end
-puts "data seeded"
