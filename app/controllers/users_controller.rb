@@ -9,7 +9,6 @@ class UsersController < ApplicationController
 
   def new
     @user = User.new
-    render partial: "form"
   end
 
   def create
@@ -21,9 +20,7 @@ class UsersController < ApplicationController
     end
   end
 
-  def edit
-    render partial: "form"
-  end
+  def edit; end
 
   def update
     if @user.update(user_params)

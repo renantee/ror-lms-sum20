@@ -9,21 +9,18 @@ class CoursesController < ApplicationController
 
   def new
     @course = Course.new
-    render partial: "form"
   end
 
   def create
     @course = Course.new(course_params)
     if @course.save
-      redirect @course
+      redirect_to @course
     else
       render :new
     end
   end
 
-  def edit
-    render partial: "form"
-  end
+  def edit; end
 
   def update
     if @course.update(course_params)
